@@ -1,7 +1,9 @@
 language: python
+python:
+  - 2.7
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y gpsd-clients
+  - sudo apt-get install -y gpsd gpsd-clients python-gps
 install:
   - pip install coveralls
 script:
