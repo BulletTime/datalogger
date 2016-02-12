@@ -1,24 +1,14 @@
 language: python
-sudo: false
+sudo: true
 branches:
   only:
     - master
 python:
   - "2.7"
-  - "3.4"
-addons:
-  apt:
-    packages:
-    - gpsd
-    - gpsd-clients
-    - python-gps
 before_install:
   - pip install -U pip
+  - sudo apt-get install -y gpsd gpsd-clients python-gps
 install:
   - travis_wait travis_retry pip install coveralls
 script:
   - nosetests  --with-coverage --cover-package=src
-cache:
-  - apt
-  - directories:
-    - $HOME/.cache/pip
