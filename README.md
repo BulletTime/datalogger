@@ -1,6 +1,6 @@
 # Datalogger
 
-[![Build Status](https://travis-ci.org/BulletTime/datalogger.svg?branch=master)](https://travis-ci.org/BulletTime/datalogger) 
+[![Build Status](https://travis-ci.org/BulletTime/datalogger.svg?branch=master)](https://travis-ci.org/BulletTime/datalogger) [![Coverage Status](https://coveralls.io/repos/github/BulletTime/datalogger/badge.svg?branch=master)](https://coveralls.io/github/BulletTime/datalogger?branch=master)
 
 Please contact <sven.agneessens@gmail.com> when you encounter bugs or have
 any questions.
