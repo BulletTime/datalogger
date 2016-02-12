@@ -1,5 +1,5 @@
 import time
-from Sensors.GPS.GPS import GPS, GPSData
+from sensors.gps.Gps import GPS, GPSData
 from gps.client import dictwrapper
 from nose.tools import assert_equal, assert_not_equal, assert_is_none, assert_true, assert_false, raises
 

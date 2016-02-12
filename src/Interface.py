@@ -2,7 +2,7 @@ import logging
 import time
 import ConfigParser
 
-from Sensors.GPS.GPS import GPS
+from sensors.gps.Gps import GPS
 
 
 class Interface:

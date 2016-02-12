@@ -1,9 +1,10 @@
 language: python
-
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y gpsd gpsd-clients python-gps
-
-install: true
-
-script: nosetests
+  - sudo apt-get install -y gpsd-clients
+install:
+  - pip install coveralls
+script:
+  - nosetests  --with-coverage --cover-package=src
+after_success:
+  - coveralls

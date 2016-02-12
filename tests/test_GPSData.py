@@ -1,6 +1,8 @@
-from Sensors.GPS.GPS import GPSData
 from gps.client import dictwrapper
+
 from nose.tools import assert_equal, assert_is_none, assert_true, assert_false
+
+from src.sensors.gps.Gps import GPSData
 
 
 def test_empty():

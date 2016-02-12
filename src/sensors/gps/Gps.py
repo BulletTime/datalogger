@@ -42,7 +42,7 @@ class GPS(Thread):
         logging.info('Closing %s thread' % self.__class__)
 
     def read(self):
-        logging.debug('Reading GPS signal')
+        logging.debug('Reading gps signal')
         if self.debug:
             self.data = GPSData(dictwrapper({'class': 'TPV', 'time': '2010-04-30T11:48:20.10Z', 'lat': 46.498204497,
                                              'lon': 7.568061439, 'alt': 1327.689, 'track': 10.3797, 'speed': 0.091,

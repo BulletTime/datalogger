@@ -1,7 +1,7 @@
-import logging
 import argparse
-import time
+import logging
 import threading
+import time
 
 import Interface
 
