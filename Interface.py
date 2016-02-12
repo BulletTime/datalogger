@@ -2,7 +2,7 @@ import logging
 import time
 import ConfigParser
 
-import Sensors.GPS.GPS as GPS
+from Sensors.GPS.GPS import GPS
 
 
 class Interface:
@@ -10,7 +10,7 @@ class Interface:
 
     def __init__(self, settings_file):
         self.load_settings(settings_file)
-        self.gps = GPS.GPS(debug=self.settings.getboolean('General', 'debug'))
+        self.gps = GPS(debug=self.settings.getboolean('General', 'debug'))
 
     def load_settings(self, settings_file):
         self.settings.read(settings_file)
@@ -30,8 +30,8 @@ class Interface:
         logging.info('Start gps')
         # self.gps.setDaemon(True)
         self.gps.start()
-        while(True):
-            print(self.gps.get_longitude())
+        while True:
+            print(self.gps.get_data())
             time.sleep(1)
 
     def cleanup(self):
