@@ -12,6 +12,6 @@ before_install:
 install:
   - travis_wait travis_retry pip install coveralls
 script:
-  - nosetests  --with-coverage --cover-package=sensors
+  - nosetests  --with-coverage --cover-package=src.sensors
 after_success:
   - coveralls
