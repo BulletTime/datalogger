@@ -4,7 +4,9 @@ import sys
 from threading import Thread
 
 try:
+    # noinspection PyUnresolvedReferences
     import gps
+    # noinspection PyUnresolvedReferences
     from gps.client import dictwrapper
 except RuntimeError:
     print('Library not installed: python-gps; To install: sudo apt-get install python-gps')
